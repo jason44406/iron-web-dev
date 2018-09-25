@@ -1,14 +1,97 @@
 <head>
   <div class="container mt-4">
-    <h2>Welcome! This is the header.</h2>
+    <h2>Welcome / index : Bold mission statement here!  Maybe with some space around it.</h2>
   <div>
 </head>
 
 <body>
+
+  <div class="container">
+    <!-- <p class="pt-2">This shows the cards arranged with the standard row / column configuration which allows for a better definition of the card size at the various breakpoints. This one has two breakpoints defined.</p> -->
+     <div class="row">
+      <div class="col-sm-6 col-lg-4"> <!-- takes up 6 units at the sm breakpoint -->
+        <section class="card mb-5" id="design">
+          <%= image_tag "software-657188.jpg", alt: "Design Image", class: "card-img-top img-fluid"  %>
+          <!-- <img class="card-img-top" src='images/software-657188.jpg' alt="Image here"> -->
+          <div class="card-body">
+            <h2 class="card-title">Design</h2>
+            <h5 class="card-subtitle">How you want it</h5>
+            <p class="card-text">Our experts can design your website, database or e-commerce solution.  We can also work with your current the Marketing company.</p>
+          </div>
+          <div class="list-group list-group-flush">
+            <a class="list-group-item" href="#">More Design</a>
+            <a class="list-group-item" href="#">Default Templates</a>
+            <a class="list-group-item" href="#">Examples</a>
+          </div>
+        </section><!-- card -->
+      </div><!-- col -->
+      <div class="col-sm-6 col-lg-4"> <!-- takes up 6 units at the sm breakpoint -->
+        <section class="card mb-5" id="administration">
+          <%= image_tag "agenda-3511208.jpg", alt: "Administration Image", class: "card-img-top img-fluid"  %>
+          <div class="card-body">
+            <h2 class="card-title">Administration</h2>
+            <h5 class="card-subtitle">How you need it</h5>
+            <p class="card-text">Our team can administer your database securely and scale to your needs.  Or we can provide the archetecture to run on servers provided by the client.</p>
+          </div>
+          <div class="list-group list-group-flush">
+            <a class="list-group-item" href="#">More Admin...</a>
+            <a class="list-group-item" href="#">Database Options</a>
+            <a class="list-group-item" href="#">Thing 3</a>
+          </div>
+        </section><!-- card -->
+      </div><!-- col -->
+      <div class="col-sm-6 col-lg-4"> <!-- takes up 6 units at the sm breakpoint -->
+        <section class="card mb-5" id="aboutUs">
+          <%= image_tag "administration-2178274.jpg", alt: "About Us Image", class: "card-img-top"  %>
+          <div class="card-body">
+            <h2 class="card-title">About Us</h2>
+            <h5 class="card-subtitle">Get to know us</h5>
+            <p class="card-text">We're a small shop.  We love to learn and grow and look forward to providing solutions to your business.</p>
+          </div>
+          <div class="list-group list-group-flush">
+            <a class="list-group-item" href="#">About Us...</a>
+            <a class="list-group-item" href="#">Thing 2</a>
+            <a class="list-group-item" href="#">Thing 3</a>
+          </div>
+        </section><!-- card -->
+      </div><!-- col -->
+    </div><!-- row -->
+  </div><!-- content container -->
+
   <div class=container mt-4>
-    <h3>Hello, world!  This is the body</h3>
+    <h3>Hello, world!  This is the body with some embedded ruby code.</h3>
     <p>
       The time is now: <%= Time.now %>
     </p>
   </div>
+
+
+  <div class=container mt-4>
+    <h3>These are just some more containers to extend the page.</h3>
+    <p>
+      The time is now: <%= Time.now %>
+    </p>
+  </div>
+
+  <div class=container mt-4>
+    <h3>These are just some more containers to extend the page.</h3>
+    <p>
+      The time is now: <%= Time.now %>
+    </p>
+  </div>
+
+  <div class=container mt-4>
+    <h3>These are just some more containers to extend the page.</h3>
+    <p>
+      The time is now: <%= Time.now %>
+    </p>
+  </div>
+
+  <div class=container mt-4>
+    <h3>These are just some more containers to extend the page.</h3>
+    <p>
+      The time is now: <%= Time.now %>
+    </p>
+  </div>
+
 </body>
