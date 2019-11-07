@@ -47,6 +47,9 @@ gem 'rest-client'
 # Specify loofah version due to CVE-2018-16468
 gem "loofah", ">= 2.2.3"
 
+# Specify nokogiri version due to CVE-2019-5477
+gem "nokogiri", ">= 1.10.4"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
