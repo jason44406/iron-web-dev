@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.1'
+gem 'rails', '~> 5.2.2'
 # Specify rack due to CVE-2018-16470 and 16470
 gem "rack", ">= 2.0.6"
 # Use postgresql as the database for Active Record
@@ -38,14 +38,23 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-# Bootstrap
-gem 'bootstrap', '~> 4.1.3'
+# Bootstrap - updated to 4.3.1 due to CVE-2019-8331
+gem "bootstrap", ">= 4.3.1"
 
 # Rest Client
 gem 'rest-client'
 
 # Specify loofah version due to CVE-2018-16468
 gem "loofah", ">= 2.2.3"
+
+# Specify nokogiri version due to CVE-2019-5477
+gem "nokogiri", ">= 1.10.4"
+
+# Specify actionview version due to CVE-2019-5419
+gem "actionview", ">= 5.2.2.1"
+
+# Specify railties version due to CVE-2019-5420
+gem "railties", ">= 5.2.2.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
