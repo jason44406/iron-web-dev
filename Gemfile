@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.1'
+gem 'rails', '~> 5.2.2'
 # Specify rack due to CVE-2018-16470 and 16470
 gem "rack", ">= 2.0.6"
 # Use postgresql as the database for Active Record
@@ -49,6 +49,9 @@ gem "loofah", ">= 2.2.3"
 
 # Specify nokogiri version due to CVE-2019-5477
 gem "nokogiri", ">= 1.10.4"
+
+# Specify actionview version due to CVE-2019-5419
+gem "actionview", ">= 5.2.2.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
