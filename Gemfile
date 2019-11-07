@@ -38,8 +38,8 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
-# Bootstrap
-gem 'bootstrap', '~> 4.1.3'
+# Bootstrap - updated to 4.3.1 due to CVE-2019-8331
+gem "bootstrap", ">= 4.3.1"
 
 # Rest Client
 gem 'rest-client'
