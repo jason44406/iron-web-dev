@@ -53,6 +53,9 @@ gem "nokogiri", ">= 1.10.4"
 # Specify actionview version due to CVE-2019-5419
 gem "actionview", ">= 5.2.2.1"
 
+# Specify railties version due to CVE-2019-5420
+gem "railties", ">= 5.2.2.1"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
